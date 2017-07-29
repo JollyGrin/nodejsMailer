@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Foundation for Sites</title>
+  <link href="css/app.css" rel="stylesheet">
+  <link href="css/new.css" rel="stylesheet">
+  <style type="text/css">
+     .button {
+       display:inline-block;
+     }
+  </style>
+</head>
+<body>
+  
+
+  <!-- Section - Contact Start -->
+  <form method="post" id="mailform">
+    <div class="grid-container toppad">
+      <div class="grid-x">
+        
+        <!-- Name Field -->
+        <div class="large-auto cell">
+          <label>Your Name</label>
+          <input id="namefield" name="userName" placeholder="hello there, write your name here" type="text">
+        </div>
+
+        <!-- Email Field -->
+        <div class="large-auto cell">
+          <label>Email</label>
+          <input id="emailfield" name="userEmail" placeholder="email here" type="text"></label>
+        </div>
+      </div>
+
+        <!-- Text Box -->
+        <div class="grid-x">
+        <div class="large-auto cell">
+          <label>Text<label>
+          <textarea id="textfield" name="userText" placeholder="Write your message here"></textarea>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <!-- <input class="button" name="sendEmail" type="submit" value="Send"> --> <input class="button" name="reset" type="reset" value="Reset">
+    </div>
+  </form>
+
+  <button class="button" onclick="submitForm()">Send</button>
+
+  <!-- //Section - Contact End -->
+
+  <script src="bower_components/jquery/dist/jquery.js"></script> 
+  <script src="bower_components/what-input/dist/what-input.js"></script> 
+  <script src="bower_components/foundation-sites/dist/js/foundation.js"></script> 
+  <script src="js/app.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> -->
+</body>
+</html>
