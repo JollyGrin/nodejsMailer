@@ -15,6 +15,15 @@ app.post('/form', (req, res) => {
 	console.log(req.body.Email)
 	console.log(req.body.Name)
 	console.log(req.body.Text)
+
+	var HelperOptions = {
+	from: req.body.Name + '<noreply@nestegg.eu>',
+	to: 'info@nestegg.eu',
+	cc: req.body.Email,
+	subject: 'Hello World',
+	text: req.body.Text
+};
+	sendMail(HelperOptions)
 	res.json({ ok: true });
 })
 

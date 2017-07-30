@@ -21,10 +21,13 @@ let HelperOptions = {
 	text: 'Wow this works'
 };
 
-transporter.sendMail(HelperOptions, (error, info) => {
+
+function sendMail(data){
+	transporter.sendMail(data, (error, info) => {
 	if(error){
 		return console.log(error);
 	} 
 	console.log("Success");
 	console.log(info);
 });
+}
